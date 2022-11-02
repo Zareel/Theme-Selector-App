@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.stars {
+  color: #fff;
+}
+@media screen and (min-width: 300px) {
+  .top {
+    height: 50%;
+  }
+  #sun {
+    font-size: 40px;
+    float: right;
+  }
+  .clouds {
+    float: left;
+  }
+  .clouds .cloud1 {
+    font-size: 60px;
+  }
+  .clouds .cloud2 {
+    font-size: 40px;
+    margin-top: 50px;
+  }
+  .down {
+    height: 50%;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+  }
+  .tree1 {
+    font-size: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+  }
+  .tree2 {
+    position: absolute;
+    bottom: 0;
+    left: 250px;
+    font-size: 100px;
+  }
+  .tree3 {
+    font-size: 180px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .man-boat {
+    display: none;
+  }
+
+  .star1 {
+    position: absolute;
+    left: 30px;
+    top: 150px;
+  }
+  .star2 {
+    position: absolute;
+    left: 10px;
+  }
+  .star3 {
+    position: absolute;
+    left: 200px;
+    top: 120px;
+  }
+  .star4 {
+    position: absolute;
+    right: 80px;
+  }
+  .star5 {
+    position: absolute;
+    left: 320px;
+    top: 170px;
+  }
+  .water {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 460px) {
+  #sun {
+    font-size: 40px;
+    float: right;
+  }
+
+  .clouds .cloud1 {
+    font-size: 80px;
+    margin-top: 50px;
+  }
+  .clouds .cloud2 {
+    font-size: 40px;
+    margin-top: 50px;
+  }
+
+  .tree1 {
+    font-size: 180px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .tree2 {
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    font-size: 100px;
+  }
+  .tree3 {
+    display: none;
+  }
+  .water {
+    display: inline-block;
+    margin-top: -100px;
+  }
+
+  .man-boat {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .man-boat .man {
+    font-size: 50px;
+    margin-right: 20px;
+  }
+  .man-boat .boat {
+    font-size: 80px;
+  }
+
+  .star1 {
+    position: absolute;
+    left: 30px;
+    top: 150px;
+  }
+  .star2 {
+    position: absolute;
+    left: 100px;
+    top: 20px;
+  }
+  .star3 {
+    position: absolute;
+    left: 200px;
+    top: 120px;
+  }
+  .star4 {
+    position: absolute;
+    right: 100px;
+  }
+  .star5 {
+    position: absolute;
+    left: 380px;
+    top: 170px;
+  }
+}
+@media screen and (min-width: 648px) {
+  .clouds .cloud1 {
+    font-size: 100px;
+    font-weight: 200;
+  }
+  .clouds .cloud2 {
+    font-size: 70px;
+    position: absolute;
+    left: 100px;
+    top: 70px;
+    font-weight: 200;
+  }
+  .star1 {
+    position: absolute;
+    left: 30px;
+    top: 180px;
+  }
+  .star2 {
+    position: absolute;
+    left: 100px;
+    top: 20px;
+  }
+  .star3 {
+    position: absolute;
+    left: 300px;
+    top: 120px;
+  }
+  .star4 {
+    position: absolute;
+    right: 100px;
+  }
+  .star5 {
+    position: absolute;
+    left: 500px;
+    top: 170px;
+  }
+  .man-boat .man {
+    margin-right: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clouds .cloud1 {
+    font-size: 120px;
+  }
+  .clouds .cloud2 {
+    font-size: 80px;
+    position: absolute;
+    left: 150px;
+  }
+  .tree1 {
+    font-size: 180px;
+    position: absolute;
+    bottom: 0;
+    left: 110px;
+  }
+  .tree2 {
+    position: absolute;
+    bottom: 0;
+    left: 240px;
+    font-size: 100px;
+  }
+  .tree3 {
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .man-boat .boat {
+    font-size: 100px;
+  }
+  .man-boat .man {
+    margin-right: 70px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .star1 {
+    position: absolute;
+    left: 30px;
+    top: 200px;
+  }
+  .star2 {
+    position: absolute;
+    left: 250px;
+    top: 20px;
+  }
+  .star3 {
+    position: absolute;
+    left: 500px;
+    top: 120px;
+  }
+  .star4 {
+    position: absolute;
+    right: 250px;
+    top: 50px;
+  }
+
+  .star5 {
+    position: absolute;
+    left: 900px;
+    top: 170px;
+  }
+  .tree1 {
+    left: 140px;
+  }
+  .tree2 {
+    left: 260px;
+  }
+  .tree3 {
+    font-size: 220px;
+  }
+  .clouds .cloud1 {
+    font-size: 140px;
+  }
+  .clouds .cloud2 {
+    font-size: 90px;
+    position: absolute;
+    left: 150px;
+  }
+}
+@media screen and (min-width: 1204px) {
+  #sun {
+    font-size: 80px;
+  }
+  .clouds .cloud1 {
+    font-size: 150px;
+    font-weight: 200;
+    top: 40px;
+  }
+  .clouds .cloud2 {
+    font-size: 100px;
+    left: 200px;
+    top: 70px;
+    font-weight: 200;
+  }
+  .tree1 {
+    font-size: 250px;
+    font-weight: 200;
+    margin-left: 50px;
+  }
+  .tree2 {
+    font-size: 200px;
+    font-weight: 200;
+    margin-left: 80px;
+  }
+  .tree3 {
+    font-size: 300px;
+    margin-left: -20px;
+  }
+  .star5 {
+    position: absolute;
+    left: 900px;
+    top: 200px;
+  }
+}
